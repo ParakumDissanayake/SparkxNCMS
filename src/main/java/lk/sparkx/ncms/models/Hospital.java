@@ -1,13 +1,19 @@
 package lk.sparkx.ncms.models;
 
-import java.util.Date;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+import java.sql.Date;
+
+
+@Getter @Setter @NoArgsConstructor
 public class Hospital {
     private  String id;
     private  String name;
     private String district;
-    private int location_x;
-    private int location_y;
-    private Date build_date;
+    private int locationX;
+    private int locationY;
+    private Date buildDate;
 
 }

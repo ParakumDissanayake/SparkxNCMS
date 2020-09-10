@@ -1,6 +1,12 @@
 package lk.sparkx.ncms.payload;
 
-public class ApiResponse {
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter @Setter @NoArgsConstructor
+public class ApiResponse<E>{
     private  String success;
     private  String response;
 }
